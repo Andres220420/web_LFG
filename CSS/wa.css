@@ -1,0 +1,39 @@
+/* WhatsApp Button and Additional Styles */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button img {
+    width: 35px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+}
+
+/* Additional utility styles */
+.auto-rotate {
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
