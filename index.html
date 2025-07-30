@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comidas preparadas frescas con tecnología y tradición. Empresa gallega especializada en soluciones gastronómicas para empresas, retail y hostelería.">
+    <meta property="og:title" content="La Familia Gastro S.L.">
+    <meta property="og:image" content="https://tusitio.com/images/preview.jpg">
+    <meta property="og:description" content="Comidas preparadas frescas con tecnología y tradición.">
+    <meta property="og:type" content="website">
+    <title>La Familia Gastro S.L.</title>
+    <link rel="shortcut icon" href="./images/logo.flg.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/normalize.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/wa.css">
+    <link rel="import" href="./JS/AboutServices.jsx">
+    <meta name="theme-color" content="#02091F9">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+</head>
+<body>
+<header class="header">
+  <nav class="nav container">
+    <div class="nav_logo">
+      <img class="Logo-img" src="./images/Imagen1-removebg-preview.png" alt="La Familia Gastro S.L.">
+    </div>
+    <!-- Botón menú hamburguesa -->
+    <div class="nav__menu" id="menu-toggle">&#9776;</div>
+    <!-- Menú navegación -->
+    <ul class="nav_links" id="nav-links">
+      <li class="nav_close" id="menu-close">&times;</li>
+      <li class="nav_item"><a href="#">Inicio</a></li>
+      <li class="nav_item">
+        <a href="#">Quiénes Somos ▾</a>
+        <ul class="dropdown">
+          <li><a href="#about">Quiénes somos</a></li>
+          <li><a href="./galeria.html">Galería</a></li>
+        </ul>
+      </li>
+      <li class="nav_item"><a href="#footer">Contacto</a></li>
+      <li class="nav_item">
+        <a href="#">Idioma ▾</a>
+        <ul class="dropdown">
+          <li><a href="./en.html">English</a></li>
+          <li><a href="./port.html">Portugués</a></li>
+          <li><a href="./fr.html">Francés</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+<section id="hero" class="hero">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/platos 1.jpg" alt="Imagen 1"></div>
+      <div class="swiper-slide"><img src="./images/platos 2.jpg" alt="Imagen 2"></div>
+      <div class="swiper-slide"><img src="./images/platos 3.jpg" alt="Imagen 3"></div>
+    </div>
+
+    <div class="hero_container container">
+      <h1 class="hero_title">Donde nacen los sabores que marcan diferencia.</h1>
+      <p class="hero_subtitle">Comidas 100% gallegas, frescas y listas para disfrutar.</p>
+      <a href="#about" class="cta">Descúbrelo</a>
+    </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <h2>Quiénes Somos</h2>
+  <p>
+    La Familia Gastro S.L. es una empresa gallega especializada en comidas preparadas frescas con valor añadido. Combina tecnología, tradición y eficiencia para atender tanto el mercado empresarial como el retail con una propuesta gastronómica de calidad.
+  </p>
+  <a href="#inicio" class="btn-primary">Comienza ahora</a>
+</section>
+
+<main>
+<!--<section id="about" class="container about">
+<h2 class="subtitle">Somos Especialistas</h2>
+<p class="about_parrafo">Ofrecemos soluciones gastronómicas adaptadas a distintos sectores. Estos son nuestros principales servicios:
+</p>
+<div class="carousel-3d-container">
+  <div class="carousel-3d">
+    <div class="card-3d">
+      <img src="./images/white-rainforest-CVVbynP7DQ4-unsplash (1).jpg" alt="Foodservice" />
+      <h3>Foodservice corporativo</h3>
+      <p>Deliciosos platos listos para oficinas y empresas, combinando sabor, calidad y practicidad.</p>
+    </div>
+    <div class="card-3d">
+      <img src="./images/zongnan-bao-K7gs2CSZIa4-unsplash.jpg" alt="Supermercados" />
+      <h3>Producción para supermercados</h3>
+      <p>Marca blanca o propia. Garantía de frescura y excelencia.</p>
+    </div>
+    <div class="card-3d">
+      <img src="./images/nima-naseri-AqAyU5YAAyQ-unsplash.jpg" alt="Alta gastronomía" />
+      <h3>Alta gastronomía para hostelería</h3>
+      <p>Platos gourmet para restaurantes y hoteles de primer nivel.</p>
+    </div>
+  </div>
+</div>
+</section>-->
+  <section id="about" class="container about">
+    <h2 class="subtitle">Somos Especialistas</h2>
+    <p class="about_parrafo">
+      Ofrecemos soluciones gastronómicas adaptadas a distintos sectores. Estos son nuestros principales servicios:
+    </p>
+
+    <div class="cards-tilt-wrapper">
+      <div class="card-tilt" data-tilt data-tilt-scale="1.05" data-tilt-max="10">
+        <img src="./images/white-rainforest-CVVbynP7DQ4-unsplash (1).jpg" alt="Foodservice corporativo">
+        <h3>Foodservice corporativo</h3>
+        <p>Platos listos para oficinas y empresas, combinando sabor, calidad y practicidad.</p>
+      </div>
+      <div class="card-tilt" data-tilt data-tilt-scale="1.05" data-tilt-max="10">
+        <img src="./images/zongnan-bao-K7gs2CSZIa4-unsplash.jpg" alt="Fabricación para Supermercados">
+        <h3>Fabricación para Supermercados</h3>
+        <p>Marca propia o blanca, garantizando frescura y excelencia.</p>
+      </div>
+      <div class="card-tilt" data-tilt data-tilt-scale="1.05" data-tilt-max="10">
+        <img src="./images/nima-naseri-AqAyU5YAAyQ-unsplash.jpg" alt="Alta gastronomía">
+        <h3>Alta gastronomía hostelería</h3>
+        <p>Platos gourmet para restaurantes y hoteles de primer nivel.</p>
+      </div>
+      <div class="card-tilt" data-tilt data-tilt-scale="1.05" data-tilt-max="10">
+        <img src="images/Exquisite Office Catering Napa County - Elevate Your Workday.jpeg" alt="Catering y eventos">
+        <h3>Catering y eventos</h3>
+        <p>Menús personalizados para celebraciones, empresas o eventos privados.</p>
+      </div>
+      <div class="card-tilt" data-tilt data-tilt-scale="1.05" data-tilt-max="10">
+        <img src="images/HORECA+.jpeg" alt="Canal HORECA+">
+        <h3>Canal HORECA+</h3>
+        <p>Soluciones para hostelería moderna: agilidad, emplatado y calidad premium.</p>
+      </div>
+    </div>
+  </section>
+
+<section class="knowledge">
+  <div class="knowledge_container container">
+    <div class="knowledge_texts">
+      <h2 class="subtitle">La excelencia no es un objetivo, es nuestro estándar.</h2>
+      <p class="knowledge_parrafo">
+        Cada detalle, cada elección y cada esfuerzo reflejan nuestro compromiso
+        inquebrantable con la calidad. No nos conformamos con lo convencional;
+        buscamos ir más allá, innovando y perfeccionando cada aspecto de nuestro
+        trabajo. La excelencia no es un destino, sino la esencia que nos define
+        en todo lo que hacemos.
+      </p>
+      <a href="#" class="cta">Entra</a>
+    </div>
+
+   <figure class="knowledge_picture auto-rotate">
+  <img src="./images/Imagen1-removebg-preview.png" alt="Imagen excelencia" class="knowledge_img" />
+</figure>
+  </div>
+</section>
+
+    <section class="price container">
+        <h2 class="subtitle">
+            Nuestra Misión y Visión
+            <span class="price_course">La Familia Gastro S.L.</span>
+        </h2>
+
+        <div class="price_table">
+            <div class="price_element">
+                <p class="price_name"></p>
+                <h3 class="price_price">Misión</h3>
+
+                <div class="price_items">
+                    <p class="price_features">Proveer soluciones gastronómicas listas para consumir que integren calidad, sabor, practicidad y sostenibilidad, acercando la cocina gallega a los nuevos estilos de vida urbanos y profesionales.
+                    </p>
+                </div>
+
+                <a href="#" class="price_cta">ahora</a>
+            </div>
+
+            <div class="price_element">
+                <p class="price_name"></p>
+                <h3 class="price_price">Visión</h3>
+
+                <div class="price_items">
+                    <p class="price_features">Ser el operador líder del noroeste peninsular en comidas preparadas con identidad regional, escalando producción sin perder autenticidad, desarrollando I+D y consolidando alianzas estratégicas.
+                    </p>
+                </div>
+
+                <a href="#" class="price_cta">ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimony">
+        <div class="testimony_container container">
+            <img src="./images/leftarrow.svg" class="testimony_arrow" alt="left" id="before">
+            <section class="testimony_body testimony_body--show" data-id="1">
+
+                <div class="testimony_texts">
+                    <h2 class="subtitle">Producto local y de temporada <span class="testimony_course">La Familia Gastro S.L..</span></h2>
+                    <p class="testimony_review">Garantizamos frescura y sabor en cada preparación.</p>
+                </div>
+
+                <figure class="testimony_picture">
+                    <img src="./images/WhatsApp Image 2025-04-02 at 1.37.41 PM.jpeg" alt="Imagen1" class="testimony_img">
+                </figure>
+
+            </section>
+            <section class="testimony_body" data-id="2">
+
+                <div class="testimony_texts">
+                    <h2 class="subtitle">Adaptación al cliente
+                    <span class="testimony_course">La Familia Gastro S.L.</span></h2>
+                    <p class="testimony_review">Soluciones personalizadas para empresas, residencias y más.</p>
+                </div>
+
+                <figure class="testimony_picture">
+                    <img src="./images/WhatsApp Image 2025-04-02 at 1.37.41 PM (1).jpeg" alt="Imagen2" class="testimony_img">
+                </figure>
+
+            </section>
+            <section class="testimony_body" data-id="3">
+
+                <div class="testimony_texts">
+                    <h2 class="subtitle">Velocidad de respuesta y eficiencia
+                    <span class="testimony_course">La Familia Gastro S.L.</span></h2>
+                    <p class="testimony_review">Optimizamos cada proceso para un servicio ágil y confiable.</p>
+                </div>
+
+                <figure class="testimony_picture">
+                    <img src="./images/djim-loic-ft0-Xu4nTvA-unsplash.jpg" alt="Imagen3" class="testimony_img">
+                </figure>
+
+            </section>
+            <section class="testimony_body" data-id="4">
+
+                <div class="testimony_texts">
+                    <h2 class="subtitle">Compromiso nutricional
+                    <span class="testimony_course">La Familia Gastro S.L.</span></h2>
+                    <p class="testimony_review">Ofrecemos alimentos sin aditivos innecesarios, priorizando la salud.</p>
+                </div>
+
+                <figure class="testimony_picture">
+                    <img src="./images/WhatsApp Image 2025-04-02 at 1.37.41 PM (2).jpeg" alt="Imagen4" class="testimony_img">
+                </figure>
+
+            </section>
+            <section class="testimony_body" data-id="5">
+
+                <div class="testimony_texts">
+                    <h2 class="subtitle">Control logístico y reducción de costes<br>
+                    <span class="testimony_course">Familia Gastro S.L.</span></h2>
+                    <p class="testimony_review">Maximizamos recursos para brindar calidad al mejor precio.</p>
+                </div>
+
+                <figure class="testimony_picture">
+                    <img src="./images/WhatsApp Image 2025-04-02 at 1.37.44 PM.jpeg" alt="Imagen5" class="testimony_img">
+                </figure>
+
+            </section>
+            <img src="./images/rigtharrow.svg" class="testimony_arrow" alt="rigth" id="next">
+        </div>
+    </section>
+
+    <section class="Direccion container">
+        <h1 class="Direccion_subtitle">Descubre nuestro trabajo</h1>
+        <p class="Direccion_parrafo">Explora momentos especiales en nuestra galería de recuerdos.</p>
+
+    <article class="Imagen">
+    <a href="./galeria.html">
+        <img src="./images/WhatsApp Image 2025-04-02 at 1.37.41 PM (3).jpeg" alt="Familia">
+        <img src="./images/Imagen1-removebg-preview.png" alt="logo">
+    </a>
+    </article>
+</section>
+
+<section class="ubicacion">
+  <div class="container ubicacion_container">
+    <h2 class="ubicacion_titulo">Nuestra ubicación</h2>
+    <p class="ubicacion_texto">
+      Visítanos en nuestra sede en A Coruña, donde la tradición y la innovación se unen para ofrecerte lo mejor de la gastronomía gallega.
+    </p>
+
+    <div class="ubicacion_mapa">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.889364697911!2d-8.41050972416237!3d43.3332790720761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7dfffa1230bb%3A0x7151f4a0c188d187!2sR%C3%BAa%20Juan%20de%20la%20Cierva%2C%207%2C%2015008%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1721051547987!5m2!1ses!2ses"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+    <footer id="footer" class="footer">
+        <section class="footer_container container">
+            <form class="footer_form">
+                <h2 class="footer_newsletter">Te contactamos</h2>
+                <div class="footer_inputs">
+                    <input type="email" placeholder="Email" class="footer_input">
+                    <input type="submit" value="Enviar" class="footer_submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer_copy container">
+            <div class="footer_social">
+                <a href="#" class="footer_icons"><img src="./images/facebook.svg" class="footer_img" alt="Facebook"></a>
+                <a href="#" class="footer_icons"><img src="./images/insta.svg" class="footer_img" alt="Instagram"></a>
+                <a href="#" class="footer_icons"><img src="./images/X.svg" class="footer_img" alt="twitter"></a>
+            </div>
+
+            <h3 class="footer_copyright">Derechos reservados &copy;La Familia Gastro S.L.</h3>
+        </section>
+    </footer>
+
+    <a href="https://wa.me/1234567890" target="_blank" class="whatsapp-button">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+<script src="./JS/slider.js"></script>
+<script src="./JS/menu.js"></script>
+<script src="./js/vanilla-tilt.min.js"></script>
+<script>
+ const image = document.querySelector(".auto-rotate img");
+  let angleY = 0;
+  let angleX = 0;
+
+  function rotateImage() {
+    angleY += 0.4;
+    angleX = Math.sin(angleY * 0.02) * 10; // Efecto de vaivén
+
+    image.style.transform = `rotateY(${angleY}deg) rotateX(${angleX}deg)`;
+    requestAnimationFrame(rotateImage);
+  }
+
+  rotateImage();
+</script>
+</body>
+</html>
